@@ -220,7 +220,7 @@ function fun6() {
 
             var n1 = prompt("Introduce un numero de 4 cifras");
         }
-        while (n1.indexOf(n1.charAt(3))!=3 || n1.indexOf(n1.charAt(2))!=2 || n1.indexOf(n1.charAt(1))!=1 && n1 != null);
+        while (n1 != null && n1.indexOf(n1.charAt(3))!=3 || n1.indexOf(n1.charAt(2))!=2 || n1.indexOf(n1.charAt(1))!=1);
 
         var heridos = 0;
         var muertos = 0;
