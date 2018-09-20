@@ -212,8 +212,6 @@ function fun6() {
     }
     while(valor.indexOf(valor.charAt(3))!=3 || valor.indexOf(valor.charAt(2))!=2 || valor.indexOf(valor.charAt(1))!=1);
 
-    alert(valor);
-
     do {
 
         do {
