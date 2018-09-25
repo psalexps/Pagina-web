@@ -2,38 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practica 2</title>
-    <script type="text/javascript" src="Practica2.js"></script>
+    <title>Practica 3</title>
     <style type="text/css">
-        body {
-            width: 100%;
-            margin: 0 auto;
-        }
-        #time {
+
+        div {
+            width: 50%;
             text-align: center;
         }
+        #formu {
+            display: block;
+            margin: .5em 0 0 0;
+        }
+        #formu input {
+            margin-bottom: 1%;
+            border: 1px solid #999;
+        }
+        #formu input:hover {
+            border: 1px solid blue;
+        }
     </style>
+
 </head>
 <body>
-    <ol>
-        <li>Mostrar como esta formada la cadena de texto.</li>
-        <li>Dividir cadena de texto en dos.</li>
-        <li>Determinar si la cadena es un palíndromo.</li>
-        <li>Calcular sueldo.</li>
-        <li>Adivinar un numero del 1 al 1000.</li>
-        <li>Jugar a muertos y heridos.</li>
-        <li>Sumar números.</li>
-        <li>Mostrar número negativos, positivos y nulos.</li>
-        <li>Mostrar el número mayor y el menos.</li>
-        <li>Buscar 1 de enero que sean domingos entre 2017-2050.</li>
-        <li>¿Cuántos días faltan para Navidad?.</li>
-        <li>Calcular edad a partid de la fecha de nacimiento.</li>
-    </ol>
-    <form id="form1">
-        Numero: <input id="n1" type="number" name="valor" autofocus />
-        <input name="valor" type="button" value="OK" onclick="practica2(document.getElementById('n1').value);" />
+<div>
+<fieldset>
+    <legend>Cookies</legend>
+    <form id="formu">
+        <label for="dni">Dni : </label>
+        <input type="text" id="dni" /><br>
+        <label for="nombre">Nombre : </label>
+        <input type="text" id="nombre" /><br>
+        <label for="url">Url : </label>
+        <input type="text" id="url" /><br>
+        <label for="ip">Ip : </label>
+        <input type="text" id="ip" /><br>
+
+        <input type="button" value="Guardar" onclick="practica3(document.getElementById('dni').value,document.getElementById('nombre').value,document.getElementById('url').value,document.getElementById('ip').value)">
     </form>
-    <br><br>
-    <div id="time"></div>
+</fieldset>
+</div>
+
+    <script type="text/javascript" src="prectica3.js"></script>
+
 </body>
 </html>
